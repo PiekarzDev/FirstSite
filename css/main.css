@@ -59,7 +59,7 @@ img {
 .page-header {
     position: fixed;
     width: 100%;
-    padding: 20px 0;
+    padding: 1.25em 0;
     /* background:rgba(220,244,235,0.8); */
 }
 
@@ -67,15 +67,15 @@ img {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0px 1em;
-    margin: -10px auto;
+    padding: 0 1em;
+    margin: -0.625em auto;
 }
 
 .brand,
 h3 {
     font-family: Montserrat, sans-serif;
     color: white;
-    font-size: 35px;
+    font-size: 1.5em;
     font-weight: 600;
 }
 
@@ -98,13 +98,13 @@ h3 {
 }
 
 .menu-items li {
-    margin: 0 4px;
+    margin: 0 0.25em;
     display: inline-block;
 }
 
 .menu-items li a {
     display: inline-block;
-    padding: 16px 25px;
+    padding: 1em 1.5em;
     line-height: 1.5em;
     font-weight: 600;
     color: white;
@@ -136,15 +136,14 @@ label {
     margin: auto;
     background: url(../img/bg1.jpg)center, no-repeat;
     top: 0;
-    display: table;
+    display: flex;
     background-size: cover;
 }
 
 .baner .section-header {
-    display: table-cell;
+    display: flex;
     vertical-align: middle;
     width: 100%;
-    max-width: none;
 }
 
 .content {
@@ -157,6 +156,7 @@ label {
     font-family: Pacifico, sans-serif;
     color: white;
     font-size: 5em;
+    padding-top: 1em;
     letter-spacing: 7px;
     text-shadow: 0 0 4px #0a0909;
     opacity: 0.82;
@@ -271,7 +271,7 @@ aside img {
     padding: 21px;
     font-family: Montserrat;
     color: black;
-    font-size:1em;
+    font-size: 1em;
 }
 
 
@@ -342,6 +342,7 @@ textarea {
     padding: 10px;
     font-size: inherit;
     box-sizing: border-box;
+    outline: none;
 }
 
 input[type="text"],
@@ -401,16 +402,13 @@ input[type="submit"]:hover {
     font-size: 3em;
 }
 
-@media (max-width: 1024px){
-    article{
+@media (max-width: 1024px) {
+    article {
         padding-bottom: 1.5em;
     }
-    
-
 }
 
 @media (max-width: 880px) {
-   
     .page-header {
         position: fixed;
         width: 100%;
@@ -418,8 +416,6 @@ input[type="submit"]:hover {
         background: #8bd7bb;
         z-index: 100000;
     }
-
-
     .page-header>.container {
         display: block;
         padding: 0px 30px 0px;
@@ -446,31 +442,22 @@ input[type="submit"]:hover {
         border-bottom: 1px solid white;
         margin-bottom: 5px;
     }
-
-   
     #toggle:checked+.menu-items {
         display: block;
-        
     }
-
-
-
     .about-section>.container {
         display: block;
     }
-
     .widget img {
         margin-top: 0px;
         margin-bottom: 2em;
     }
-
     article {
         width: 100%;
     }
     aside {
         width: 100%;
     }
-  
 }
 
 @media (max-width: 750px) {
@@ -490,12 +477,10 @@ input[type="submit"]:hover {
     .main-h3 {
         padding-top: 20px;
     }
-
     .widget img {
         margin-top: 0;
         margin-bottom: 3rem;
     }
- 
     .content h2 {
         font-size: 2.8em;
         letter-spacing: 4px;
@@ -504,20 +489,19 @@ input[type="submit"]:hover {
 }
 
 @media (max-width: 425px) {
- .baner{
-     padding-top: 10em;
- }
-
+    .baner {
+        padding-top: 10em;
+    }
     .about-section>.container h2 {
         margin: 5px;
         padding-top: 1.2em;
-        font-size: 1.8em;
+        font-size: 2em;
     }
     .about-section>.container p {
         padding: 45px 55px 0px 55px;
     }
     .widget h3 {
-        font-size: 1.9em;
+        font-size: 2.1em;
         padding: 1.2em;
     }
 }
